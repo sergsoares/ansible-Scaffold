@@ -1,0 +1,8 @@
+---
+- name: Configure Server.
+  hosts: all
+  become: true
+  pre_tasks:
+    - name: Fallback if not exists Python  
+      raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+  
