@@ -3,6 +3,10 @@
 Scaffold to start playing with configuring an single server using ansible without need
 write a ansible.cfg and a hostfile.
 
+Requirements: 
+- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+- [Gnu/Make](https://www.gnu.org/software/make/)
+
 To start copy .env.example to .env
 ```
 $ cp .env.example to .env
